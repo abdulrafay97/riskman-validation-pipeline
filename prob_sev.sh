@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # path to the python interpreter (TODO: modify, the venv is not in the root directory)
-python_path="kimeds_env/bin/python3"
-
 prob=""
 sev=""
 
@@ -23,7 +21,7 @@ shift $((OPTIND -1))
 input_triples=$(cat)
 
 # output="$($python_path prob_sev.py $prob $sev)"
-output="$($python_path prob_sev.py $prob $sev)"
+output="$(python prob_sev.py $prob $sev)"
 
 
 echo -e "$input_triples\n\n$output"
