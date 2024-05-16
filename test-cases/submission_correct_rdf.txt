@@ -1,0 +1,243 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ctag: <http://commontag.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix hcalendar: <http://microformats.org/profile/hcalendar#> .
+@prefix hcard: <http://microformats.org/profile/hcard#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/icaltzd#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix md: <http://www.w3.org/ns/md#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix rif: <http://www.w3.org/2007/rif#> .
+@prefix riskman: <https://w3id.org/riskman/ontology#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <http://schema.org/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wdr: <http://www.w3.org/2007/05/powder#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///Users/abdulrafay/Desktop/Riskman/riskman-validation-pipeline/tmp_file.html> md:item () .
+
+<http://example.org/controlledRisk1> a riskman:ControlledRisk ;
+    riskman:hasAnalyzedRisk <http://example.org/analyzedRisk1> ;
+    riskman:hasID "1" ;
+    riskman:hasResidualRiskLevel <http://example.org/residualRiskLevel1> ;
+    riskman:hasSDA <http://example.org/sda1> .
+
+<http://example.org/controlledRisk2> a riskman:ControlledRisk ;
+    riskman:hasAnalyzedRisk <http://example.org/analyzedRisk2> ;
+    riskman:hasID "2" ;
+    riskman:hasResidualRiskLevel <http://example.org/residualRiskLevel2> ;
+    riskman:hasSDA <http://example.org/sda2> .
+
+<http://example.org/controlledRisk99> a riskman:ControlledRisk ;
+    riskman:hasAnalyzedRisk <http://example.org/analyzedRisk99> ;
+    riskman:hasID "99" ;
+    riskman:hasResidualRiskLevel <http://example.org/residualRiskLevel99> ;
+    riskman:hasSDA <http://example.org/sda99> .
+
+<http://example.org/analyzedRisk1> a riskman:AnalyzedRisk ;
+    riskman:hasDeviceContext <http://example.org/deviceContext1> ;
+    riskman:hasDomainSpecificHazard <http://example.org/domainSpecificHazard1> ;
+    riskman:hasHarm <http://example.org/harm1> ;
+    riskman:hasHazardousSituation <http://example.org/hazardousSituation1> ;
+    riskman:hasInitialRiskLevel <http://example.org/initialRiskLevel1> ;
+    riskman:hasName "Solvent removal risk of brain damage" .
+
+<http://example.org/analyzedRisk2> a riskman:AnalyzedRisk ;
+    riskman:hasDeviceContext <http://example.org/deviceContext2> ;
+    riskman:hasDomainSpecificHazard <http://example.org/domainSpecificHazard2> ;
+    riskman:hasHarm <http://example.org/harm2> ;
+    riskman:hasHazardousSituation <http://example.org/hazardousSituation2> ;
+    riskman:hasInitialRiskLevel <http://example.org/initialRiskLevel2> ;
+    riskman:hasName "Electrode cable risk of serious burns" .
+
+<http://example.org/analyzedRisk99> a riskman:AnalyzedRisk ;
+    riskman:hasDeviceContext <http://example.org/deviceContext99> ;
+    riskman:hasDomainSpecificHazard <http://example.org/domainSpecificHazard99> ;
+    riskman:hasHarm <http://example.org/harm99> ;
+    riskman:hasHazardousSituation <http://example.org/hazardousSituation99> ;
+    riskman:hasInitialRiskLevel <http://example.org/initialRiskLevel99> ;
+    riskman:hasName "Risk of death due to defibrillator battery running out" .
+
+<http://example.org/deviceComponent1> a riskman:DeviceComponent ;
+    riskman:hasName "Rotary evaporator" .
+
+<http://example.org/deviceComponent2> a riskman:DeviceComponent ;
+    riskman:hasName "Electrode cable" .
+
+<http://example.org/deviceComponent99> a riskman:DeviceComponent ;
+    riskman:hasName "Battery" .
+
+<http://example.org/deviceContext1> a riskman:DeviceContext ;
+    riskman:hasName "Chemical manufacturing" .
+
+<http://example.org/deviceContext2> a riskman:DeviceContext ;
+    riskman:hasName "Operating room setting" .
+
+<http://example.org/deviceContext99> a riskman:DeviceContext ;
+    riskman:hasName "Emergency medical setting" .
+
+<http://example.org/deviceFunction1> a riskman:DeviceFunction ;
+    riskman:hasName "Solvent removal" .
+
+<http://example.org/deviceFunction2> a riskman:DeviceFunction ;
+    riskman:hasName "Electrosurgery" .
+
+<http://example.org/deviceFunction99> a riskman:DeviceFunction ;
+    riskman:hasName "Defibrillation" .
+
+<http://example.org/domainSpecificHazard1> a riskman:DomainSpecificHazard ;
+    riskman:hasDeviceComponent <http://example.org/deviceComponent1> ;
+    riskman:hasDeviceFunction <http://example.org/deviceFunction1> ;
+    riskman:hasHazard <http://example.org/hazard1> ;
+    riskman:hasName "Rotary evaporator solvent removal chemical hazard" .
+
+<http://example.org/domainSpecificHazard2> a riskman:DomainSpecificHazard ;
+    riskman:hasDeviceComponent <http://example.org/deviceComponent2> ;
+    riskman:hasDeviceFunction <http://example.org/deviceFunction2> ;
+    riskman:hasHazard <http://example.org/hazard2> ;
+    riskman:hasName "Electrode cable electrosurgery hazard" .
+
+<http://example.org/domainSpecificHazard99> a riskman:DomainSpecificHazard ;
+    riskman:hasDeviceComponent <http://example.org/deviceComponent99> ;
+    riskman:hasDeviceFunction <http://example.org/deviceFunction99> ;
+    riskman:hasHazard <http://example.org/hazard99> ;
+    riskman:hasName "Battery-level related defibrillator hazard" .
+
+<http://example.org/event1> a riskman:Event ;
+    riskman:hasName "Incomplete removal of volatile solvent used in manufacturing" .
+
+<http://example.org/event2> a riskman:Event ;
+    riskman:hasName "Electrode cable unintentionally plugged into power line receptacle" .
+
+<http://example.org/event99> a riskman:Event ;
+    riskman:hasName "Defibrillator battery life runs out" .
+
+<http://example.org/harm1> a riskman:Harm ;
+    riskman:hasName "Brain damage" .
+
+<http://example.org/harm2> a riskman:Harm ;
+    riskman:hasName "Serious burns" .
+
+<http://example.org/harm99> a riskman:Harm ;
+    riskman:hasName "Death" .
+
+<http://example.org/hazard1> a riskman:Hazard ;
+    riskman:hasName "Chemical" .
+
+<http://example.org/hazard2> a riskman:Hazard ;
+    riskman:hasName "Electromagnetic energy" .
+
+<http://example.org/hazard99> a riskman:Hazard ;
+    riskman:hasName "Functionality" .
+
+<http://example.org/hazardousSituation1> a riskman:HazardousSituation ;
+    riskman:hasName "Development of gas embolism" ;
+    riskman:hasPrecedingEvent <http://example.org/event1> .
+
+<http://example.org/hazardousSituation2> a riskman:HazardousSituation ;
+    riskman:hasName "Line voltage appears on electrodes" ;
+    riskman:hasPrecedingEvent <http://example.org/event2> .
+
+<http://example.org/hazardousSituation99> a riskman:HazardousSituation ;
+    riskman:hasName "Cannot deliver shock when an arrythmia occurs" ;
+    riskman:hasPrecedingEvent <http://example.org/event99> .
+
+<http://example.org/initialProbability1> a riskman:Probability ;
+    riskman:hasIntegerValue 3 .
+
+<http://example.org/initialProbability2> a riskman:Probability ;
+    riskman:hasIntegerValue 3 .
+
+<http://example.org/initialProbability99> a riskman:Probability ;
+    riskman:hasIntegerValue 3 .
+
+<http://example.org/initialRiskLevel1> a riskman:RiskLevel ;
+    riskman:hasName "Initial Risk Level 1" ;
+    riskman:hasProbability <http://example.org/initialProbability1> ;
+    riskman:hasSeverity <http://example.org/initialSeverity1> .
+
+<http://example.org/initialRiskLevel2> a riskman:RiskLevel ;
+    riskman:hasName "Initial Risk Level 2" ;
+    riskman:hasProbability <http://example.org/initialProbability2> ;
+    riskman:hasSeverity <http://example.org/initialSeverity2> .
+
+<http://example.org/initialRiskLevel99> a riskman:RiskLevel ;
+    riskman:hasName "Initial Risk Level 99" ;
+    riskman:hasProbability <http://example.org/initialProbability99> ;
+    riskman:hasSeverity <http://example.org/initialSeverity99> .
+
+<http://example.org/initialSeverity1> a riskman:Severity ;
+    riskman:hasIntegerValue 4 .
+
+<http://example.org/initialSeverity2> a riskman:Severity ;
+    riskman:hasIntegerValue 4 .
+
+<http://example.org/initialSeverity99> a riskman:Severity ;
+    riskman:hasIntegerValue 5 .
+
+<http://example.org/residualProbability1> a riskman:Probability ;
+    riskman:hasIntegerValue 2 .
+
+<http://example.org/residualProbability2> a riskman:Probability ;
+    riskman:hasIntegerValue 1 .
+
+<http://example.org/residualProbability99> a riskman:Probability ;
+    riskman:hasIntegerValue 2 .
+
+<http://example.org/residualRiskLevel1> a riskman:RiskLevel ;
+    riskman:hasName "Residual Risk Level 1" ;
+    riskman:hasProbability <http://example.org/residualProbability1> ;
+    riskman:hasSeverity <http://example.org/residualSeverity1> .
+
+<http://example.org/residualRiskLevel2> a riskman:RiskLevel ;
+    riskman:hasName "Residual Risk Level 2" ;
+    riskman:hasProbability <http://example.org/residualProbability2> ;
+    riskman:hasSeverity <http://example.org/residualSeverity2> .
+
+<http://example.org/residualRiskLevel99> a riskman:RiskLevel ;
+    riskman:hasName "Residual Risk Level 99" ;
+    riskman:hasProbability <http://example.org/residualProbability99> ;
+    riskman:hasSeverity <http://example.org/residualSeverity99> .
+
+<http://example.org/residualSeverity1> a riskman:Severity ;
+    riskman:hasIntegerValue 3 .
+
+<http://example.org/residualSeverity2> a riskman:Severity ;
+    riskman:hasIntegerValue 2 .
+
+<http://example.org/residualSeverity99> a riskman:Severity ;
+    riskman:hasIntegerValue 5 .
+
+<http://example.org/sda1> a riskman:SDA ;
+    riskman:hasName "Implementation of an automated solvent monitoring system" .
+
+<http://example.org/sda2> a riskman:SDA ;
+    riskman:hasName "Use polarized plugs" .
+
+<http://example.org/sda99> a riskman:SDA ;
+    riskman:hasName "Indicate low battery level" .
+
